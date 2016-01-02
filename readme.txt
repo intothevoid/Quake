@@ -1,60 +1,30 @@
+This is a modified / heavily stripped down version of the original Quake
+game, based on the videos by Philip Buuck (http://handmadequake.org/)
 
-This is the complete source code for winquake, glquake, quakeworld, and 
-glquakeworld.
+A lot of files have been deleted / modified. If you wish to obtain a copy
+of the original unmodified source code of the game, head over to 
+https://github.com/id-Software/Quake 
 
-The projects have been tested with visual C++ 6.0, but masm is also required 
-to build the assembly language files.  It is possible to change a #define and 
-build with only C code, but the software rendering versions lose almost half 
-its speed.  The OpenGL versions will not be effected very much.  The 
-gas2masm tool was created to allow us to use the same source for the dos, 
-linux, and windows versions, but I don't really recommend anyone mess 
-with the asm code.
+I took up this project for entertainment / education and because of the series
+started by Philip Buuck (thanks!). I highly recommend following his Youtube channel 
+which covers this series well at https://www.youtube.com/channel/UCXgjH2-Mrb3-h1_iWurz7dQ
 
-The original dos version of Quake should also be buildable from these 
-sources, but we didn't bother trying.
+The idea is to build Quake from scratch and have a fully functional Windows version.
+The tools I am planning to use are -
 
-The code is all licensed under the terms of the GPL (gnu public license).  
-You should read the entire license, but the gist of it is that you can do 
-anything you want with the code, including sell your new version.  The catch 
-is that if you distribute new binary versions, you are required to make the 
-entire source code available for free to everyone.
+Visual Studio 2013
+Microsoft Windows 7
 
-Our previous code releases have been under licenses that preclude 
-commercial exploitation, but have no clause forcing sharing of source code.  
-There have been some unfortunate losses to the community as a result of 
-mod teams keeping their sources closed (and sometimes losing them).  If 
-you are going to publicly release modified versions of this code, you must 
-also make source code available.  I would encourage teams to even go a step 
-farther and investigate using public CVS servers for development where 
-possible.
+To download a copy of the game, check out Steam, they are currently selling the
+game for only $2.49 on the website as of 2 Jan 2016 - http://store.steampowered.com/app/2310/
+You will need the complete version for the data files (not part of their Github resource)
 
-The primary intent of this release is for entertainment and educational 
-purposes, but the GPL does allow commercial exploitation if you obey the 
-full license.  If you want to do something commercial and you just can't bear 
-to have your source changes released, we could still negotiate a separate 
-license agreement (for $$$), but I would encourage you to just live with the 
-GPL.
+I do recommend buying a copy and supporting Id Software.
 
-All of the Quake data files remain copyrighted and licensed under the 
-original terms, so you cannot redistribute data from the original game, but if 
-you do a true total conversion, you can create a standalone game based on 
-this code.
+Notes:
+1. Quake was written in C and parts in assembler.
+2. This version will strip out the assembly code to avoid uneeded complexity. Quake was written 
+keeping a 486 in mind. Modern computers will do just fine without the Assembly optimizations.
 
-I will see about having the license changed on the shareware episode of 
-quake to allow it to be duplicated more freely (for linux distributions, for 
-example), but I can't give a timeframe for it.  You can still download one of 
-the original quake demos and use that data with the code, but there are 
-restrictions on the redistribution of the demo data.
-
-If you never actually bought a complete version of Quake, you might want 
-to rummage around in a local software bargain bin for one of the originals, 
-or perhaps find a copy of the "Quake: the offering" boxed set with both 
-mission packs.
-
-Thanks to Dave "Zoid" Kirsh and Robert Duffy for doing the grunt work of 
-building this release.
-
-John Carmack
-Id Software
-
-
+--
+Karan Kadam
