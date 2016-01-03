@@ -22,6 +22,11 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #include "quakedef.h"
 #include "d_local.h"
 
+int	*d_pscantable = NULL;
+int	d_scantable[MAXHEIGHT] = { 0 };
+int	d_vrectx = 0, d_vrecty = 0, d_vrectright_particle = 0, d_vrectbottom_particle = 0;
+int	d_y_aspect_shift = 0, d_pix_min = 0, d_pix_max = 0, d_pix_shift = 0;
+
 
 /*
 ==============
